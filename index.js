@@ -6,10 +6,11 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // "1. Nama"
 // "2. Nama"
 // ...
-const sorter = (nameList, fnCallBack) => {
-  const tempArray = fnCallBack(nameList);
+const sorter = (nameList, fnSorter) => {
+  const names = fnSorter(nameList);
 
   const arrData = [];
+
   for (let i = 0; i < names.length; i++) {
     arrData.push(i + 1 + ". " + names[i]);
   }
